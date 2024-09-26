@@ -13,7 +13,7 @@ http://localhost:6789/
 
 ![screenshot1](./screenshots/first%20page%20and%20what%20to%20click%20on%20first%20page.png)
 
-A screen similar to above will appear up
+A screen similar to above will appear up.
 
 Click on the icon circled in the above screenshot to access the pipeline. This will open up a screen similar to below:  
 
