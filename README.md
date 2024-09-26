@@ -9,14 +9,16 @@ Docker compose up
 
 After running this command it will take about a minute or two then you can go to the following link to access the docker container:
 
-[http://localhost:6789/](http://localhost:6789/)
+[screenshot1](./screenshots/first%20page%20and%20what%20to%20click%20on%20first%20page.png)
 
 A screen similar to below will appear up
 
 Click on the icon circled in the above screenshot to access the pipeline. This will open up a screen similar to below:  
-![][image1]
+![screenshot2](./screenshots/click%20on%20pipeline%20wisr_challenge_pipeline.png)
 
 Once here click on the pipeline wisr\_challenge\_pipeline, this will open up a screen similar to below:
+
+![screenshot3](./screenshots/edit%20pipeline%20page.png)
 
 On this screen we can see all the blocks that will extract the data in the csv files in the data folder under the my\_project folder, load the data into tables in the MYSQL database running in the docker container.
 
@@ -25,6 +27,8 @@ Because there is a fixed order of extracting and loading the data to take into c
 To do this look to your right, and execute all the blocks in the given tree order, to do this click on each block it will be highlighted on the right where blocks can be seen. 
 
 For example in the screenshot above I had clicked on the block test\_connection and the block is highlighted on the right, over here click on the play button to run the block, execute the blocks in the following order:
+
+![screenshot2](./screenshots/how%20to%20run%20a%20blok.png)
 
 1. test\_connection  
 2. load\_titles.  
