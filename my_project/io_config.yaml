@@ -1,0 +1,10 @@
+version: 0.1.1
+default:
+  # MySQL
+  MYSQL_DATABASE: "{{ env_var('MYSQL_DATABASE') }}"
+  MYSQL_HOST: "{{ env_var('MYSQL_HOST') }}"
+  MYSQL_PASSWORD: "{{ env_var('MYSQL_PASSWORD') }}"
+  MYSQL_ROOT_PASSWORD: "{{ env_var('MYSQL_ROOT_PASSWORD') }}"
+  MYSQL_HOST_PORT: 3307
+  MYSQL_PORT: 3306
+  MYSQL_USER: "{{ env_var('MYSQL_USER') }}"

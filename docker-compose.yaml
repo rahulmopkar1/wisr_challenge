@@ -1,0 +1,41 @@
+version: '3'
+services:
+  magic-dbt:
+    image: mageai/mageai:latest
+    command: mage start ${PROJECT_NAME}
+    env_file:
+      - .env
+    environment:
+      USER_CODE_PATH: /home/src/${PROJECT_NAME}
+      ENV: ${ENV}
+      MYSQL_HOST_PORT: ${MYSQL_HOST_PORT}
+      MYSQL_HOST: ${MYSQL_HOST}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      PROJECT_NAME: ${PROJECT_NAME}
+    ports:
+      - 6789:6789
+    volumes:
+      - .:/home/src/  # Mounts the current directory to /home/src/ in the container
+    restart: on-failure:5
+  
+  mysql:
+    image: mysql:8.0
+    restart: on-failure:5
+    container_name: ${PROJECT_NAME}-mysql
+    env_file:
+      - .env
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql  # Named volume for MySQL data persistence
+      - ./my_local_folder:/my_container_folder  # Mounts a local folder to the container
+
+volumes:
+  mysql_data:

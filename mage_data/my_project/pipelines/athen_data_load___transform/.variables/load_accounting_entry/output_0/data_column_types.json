@@ -1,0 +1,1 @@
+{"Id": "str", "Transaction_Date": "str", "Loan_Account_Id": "str", "Credit_Amount": "float64", "Credit_GL_Account_Code": "int64", "Debit_Amount": "float64", "Debit_GL_Account_Code": "int64"}

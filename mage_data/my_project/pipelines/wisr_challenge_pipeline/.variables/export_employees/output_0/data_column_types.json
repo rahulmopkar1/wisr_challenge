@@ -1,0 +1,1 @@
+{"emp_no": "int64", "emp_title_id": "str", "birth_date": "date", "first_name": "str", "last_name": "str", "sex": "str", "hire_date": "date"}

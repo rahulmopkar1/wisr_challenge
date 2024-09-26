@@ -1,0 +1,1 @@
+{"equi_id": "str", "id": "str", "equitable_owner_name": "str", "reallocation_date": "date", "loan_account_id": "str", "transaction_date": "str", "Credit_GL_Account_Code": "int64", "Debit_Amount": "float64", "Debit_GL_Account_Code": "int64"}

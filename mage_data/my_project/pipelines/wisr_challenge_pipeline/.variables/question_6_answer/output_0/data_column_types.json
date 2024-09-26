@@ -1,0 +1,1 @@
+{"employee_number": "int64", "last_name": "str", "first_name": "str", "department_name": "str"}
