@@ -13,9 +13,10 @@ http://localhost:6789/
 
 ![screenshot1](./screenshots/first%20page%20and%20what%20to%20click%20on%20first%20page.png)
 
-A screen similar to below will appear up
+A screen similar to above will appear up
 
 Click on the icon circled in the above screenshot to access the pipeline. This will open up a screen similar to below:  
+
 ![screenshot2](./screenshots/click%20on%20pipeline%20wisr_challenge_pipeline.png)
 
 Once here click on the pipeline wisr\_challenge\_pipeline, this will open up a screen similar to below:
