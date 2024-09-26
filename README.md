@@ -22,10 +22,9 @@ Click on the icon circled in the above screenshot to access the pipeline. This w
 Once here click on the pipeline wisr\_challenge\_pipeline, this will open up a screen similar to below:
 
 ![screenshot3](./screenshots/edit%20pipeline%20page.png)
+On this screen, we can see all the blocks that will extract data from the CSV files in the data folder under the mmy\_project directory, and load the data into tables in the MySQL database running in the Docker container.
 
-On this screen we can see all the blocks that will extract the data in the csv files in the data folder under the my\_project folder, load the data into tables in the MYSQL database running in the docker container.
-
-Because there is a fixed order of extracting and loading the data to take into consideration the relationships given these blocks will need to be executed in a specific order
+Because there is a fixed order of extracting and loading the data to take into consideration the relationships given these blocks will need to be executed in a specific order.
 
 To do this look to your right, and execute all the blocks in the given tree order, to do this click on each block it will be highlighted on the right where blocks can be seen. 
 
