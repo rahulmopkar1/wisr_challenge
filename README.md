@@ -9,7 +9,7 @@ Docker compose up
 
 After running this command it will take about a minute or two then you can go to the following link to access the docker container:
 
-[screenshot1](./screenshots/first%20page%20and%20what%20to%20click%20on%20first%20page.png)
+![screenshot1](./screenshots/first%20page%20and%20what%20to%20click%20on%20first%20page.png)
 
 A screen similar to below will appear up
 
