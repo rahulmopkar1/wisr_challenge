@@ -2,7 +2,17 @@
 
 I have used Mage as an orchestration and ETL tool to load data into a MySQL database. For this challenge, I employed a multi-container Docker setup with Mage and MySQL running in separate containers.
 
-Clone the repo: https://github.com/rahulmopkar1/wisr\_challenge.git
+Because mage works in blocks in this challenge I have made use of two types of blocks the loader block (the one in blue) and the exporter block (the one in yellow).
+
+The loader block which is written in python extracts the data from a csv file, and makes it temporarily available via the df_1 dataframe to the exporter block. The test_output function always makes sure that the df_1 data frame is not empty.
+
+The exporter block which is written in sql, first things first creates the table in which the data will be loaded, with schema definition (so accounting for foreign keys, data types and primary keys) and then inserts the data in the dataframe df_1 into the table.
+
+I have specifed the schema for each of the tables in the export blocks with the sql query as can be seen for the departments_employee table in the screenshot below.
+
+![screenshot1](./screenshots/depatment_employee%20export%20block.png)
+
+To get started clone the repo: https://github.com/rahulmopkar1/wisr\_challenge.git
 
 To run the containers run the following command:  
 Docker compose up
