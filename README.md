@@ -1,6 +1,6 @@
 					Wisr Challenge
 
-I have used Mage as an orchestration and ETL tool to load data into a MySQL database. For this challenge, I employed a multi-container Docker setup with Mage and MySQL running in separate containers.
+I have used Mage as an orchestration and ETL tool to load data into a MySQL database. For this challenge, I employed a multi-container Docker setup with Mage and MySQL running in separate containers. ERD in this repo as well in pdf format.
 
 Because mage works in blocks in this challenge I have made use of two types of blocks the loader block (the one in blue) and the exporter block (the one in yellow).
 
